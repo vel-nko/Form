@@ -20,99 +20,184 @@
 		</a>
 	</div>
 	<form action="" class="form-holder">
-		<div class="form-step">
-			<div class="head">
-				<span class="stick">Step 1</span>
-				<h2>Your details</h2>
-			</div>
-			<input type="text" class="input-row" placeholder="FirstName*">
-			<input type="text" class="input-row" placeholder="LastName*">
-			<input type="text" class="input-row" placeholder="UserName*">
-			<input type="text" class="input-row" placeholder="JobTitle*">
-			<div class="password-row">
-				<input type="text" class="input-row" placeholder="Password*">
-				<div class="password-info">
-					<p>Password must be between
-						6-10 characters and must contain
-						both numbers and letters</p>
-				</div>
-			</div>
-			<input type="text" class="input-row" placeholder="Confirm Password*">
-			<div class="next-step">
-				<span>Step 1</span>
-				<div class="circle">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.51 8.18">
-						<defs>
-							<style>.cls-1 {
-								fill: none;
-								stroke: #fff;
-								stroke-miterlimit: 10;
-							}
+		<!--		<div class="form-step" data-step="0">-->
+		<!--			<div>-->
+		<!--				<div class="head">-->
+		<!--					<span class="stick">Step 1</span>-->
+		<!--					<h2>Your details</h2>-->
+		<!--				</div>-->
+		<!--				<div>-->
+		<!--					<input type="text" class="input-row" placeholder="FirstName*">-->
+		<!--					<input type="text" class="input-row" placeholder="LastName*">-->
+		<!--					<input type="text" class="input-row" placeholder="UserName*">-->
+		<!--					<input type="text" class="input-row" placeholder="JobTitle*">-->
+		<!--					<div class="password-row">-->
+		<!--						<input type="text" class="input-row" placeholder="Password*">-->
+		<!--						<div class="password-info">-->
+		<!--							<p>Password must be between-->
+		<!--								6-10 characters and must contain-->
+		<!--								both numbers and letters</p>-->
+		<!--						</div>-->
+		<!--					</div>-->
+		<!--					<input type="text" class="input-row" placeholder="Confirm Password*">-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--			<div class="next-step">-->
+		<!--				<span>Step 1</span>-->
+		<!--				<div class="circle">-->
+		<!--					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.51 8.18">-->
+		<!--						<defs>-->
+		<!--							<style>.cls-1 {-->
+		<!--								fill: none;-->
+		<!--								stroke: #fff;-->
+		<!--								stroke-miterlimit: 10;-->
+		<!--							}-->
 
-							.cls-2 {
-								fill: #fff;
-							}</style>
-						</defs>
-						<title>Ресурс 2</title>
-						<g id="Слой_2" data-name="Слой 2">
-							<g id="Layer_1" data-name="Layer 1">
-								<line class="cls-1" x1="0.01" y1="4.48" x2="19.43" y2="4.01"/>
-								<polygon class="cls-2"
-								         points="16.21 8.18 15.52 7.46 19.04 4.02 15.35 0.75 16.02 0 20.51 3.98 16.21 8.18"/>
-							</g>
-						</g>
-					</svg>
-				</div>
-			</div>
-		</div>
-		<div class="form-step">
+		<!--							.cls-2 {-->
+		<!--								fill: #fff;-->
+		<!--							}</style>-->
+		<!--						</defs>-->
+		<!--						<title>Ресурс 2</title>-->
+		<!--						<g id="Слой_2" data-name="Слой 2">-->
+		<!--							<g id="Layer_1" data-name="Layer 1">-->
+		<!--								<line class="cls-1" x1="0.01" y1="4.48" x2="19.43" y2="4.01"/>-->
+		<!--								<polygon class="cls-2"-->
+		<!--								         points="16.21 8.18 15.52 7.46 19.04 4.02 15.35 0.75 16.02 0 20.51 3.98 16.21 8.18"/>-->
+		<!--							</g>-->
+		<!--						</g>-->
+		<!--					</svg>-->
+		<!--				</div>-->
+		<!--			</div>-->
+		<!--		</div>-->
+		<div class="form-step" data-step="1">
 			<div class="head">
 				<span class="stick">Step 2</span>
 				<h2>Your interests</h2>
 			</div>
 			<div class="select select-all">
-				<div class="check-box">
-					<span class="check"></span>
-				</div>
-				<span>SELECT ALL SECTORS / LOCATIONS / GENERATIONS</span>
+				<input type="checkbox" id="select-all">
+				<label for="select-all" type="one">SELECT ALL SECTORS / LOCATIONS / GENERATIONS</label>
 			</div>
 			<h3>SECTORS</h3>
 			<ul class="grid-row">
-				<li class="grid-item active">Beauty</li>
-				<li class="grid-item">Eating and drinking</li>
-				<li class="grid-item">Citizenship</li>
-				<li class="grid-item">Money</li>
-				<li class="grid-item">Careers</li>
-				<li class="grid-item">Home and relationships</li>
-				<li class="grid-item">Shopping</li>
-				<li class="grid-item">Citizenship</li>
-				<li class="grid-item">Health and fitness</li>
-				<li class="grid-item">Technology</li>
-				<li class="grid-item">Communications</li>
-				<li class="grid-item">Luxury</li>
-				<li class="grid-item">Travel and Leisure</li>
-				<li class="grid-item">Getting around</li>
-				<li class="grid-item">Media and entertainment</li>
-				<li class="grid-item"></li>
+				<li class="grid-item active">
+					<input type="checkbox" id="c-1">
+					<label for="c-1" type="one">Beauty</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-2">
+					<label for="c-2" type="one">Eating and drinking</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-3">
+					<label for="c-3" type="one">Citizenship</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-4">
+					<label for="c-4" type="one">Money</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-5">
+					<label for="c-5" type="one">Careers</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-6">
+					<label for="c-6" type="one">Home and relationships</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-7">
+					<label for="c-7" type="one">Shopping</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-8">
+					<label for="c-8" type="one">Citizenship</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-9">
+					<label for="c-9" type="one">Health and fitness</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-10">
+					<label for="c-10" type="one">Technology</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-11">
+					<label for="c-11" type="one">Communications</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-12">
+					<label for="c-12" type="one">Luxury</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-13">
+					<label for="c-13" type="one">Travel and Leisure</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-14">
+					<label for="c-14" type="one">Getting around</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-15">
+					<label for="c-15" type="one">Media and entertainment</label>
+				</li>
 			</ul>
 			<h3>LOCATIONS</h3>
 			<ul class="grid-row">
-				<li class="grid-item">United States</li>
-				<li class="grid-item">Brazil</li>
-				<li class="grid-item">India</li>
-				<li class="grid-item">United Kingdom</li>
-				<li class="grid-item">China</li>
-				<li class="grid-item">Japan</li>
-				<li class="grid-item">Australia</li>
-				<li class="grid-item">Germany</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-16">
+					<label for="c-16" type="one">United States</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-17">
+					<label for="c-17" type="one">Brazil</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-18">
+					<label for="c-18" type="one">India</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-19">
+					<label for="c-19" type="one">United Kingdom</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-20">
+					<label for="c-20" type="one">China</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-21">
+					<label for="c-21" type="one">Japan</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-22">
+					<label for="c-22" type="one">Australia</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-23">
+					<label for="c-23" type="one">Germany</label>
+				</li>
 			</ul>
 			<h3>GENERATIONS</h3>
 			<ul class="grid-row">
-				<li class="grid-item">Gen Z</li>
-				<li class="grid-item">Gen X</li>
-				<li class="grid-item">Seniors</li>
-				<li class="grid-item">Gen Y</li>
-				<li class="grid-item">Boomers</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-24">
+					<label for="c-24" type="one">Gen Z</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-25">
+					<label for="c-25" type="one">Gen X</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-26">
+					<label for="c-26" type="one">Seniors</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-28">
+					<label for="c-28" type="one">Gen Y</label>
+				</li>
+				<li class="grid-item">
+					<input type="checkbox" id="c-29">
+					<label for="c-29" type="one">Boomers</label>
+				</li>
 			</ul>
 			<div class="next-step">
 				<span>Step 2</span>
@@ -141,7 +226,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="form-step">
+		<div class="form-step" data-step="2" style="display: none">
 			<div class="head head-text">
 				<span class="stick">Step 3</span>
 				<h2>Your interests</h2>
@@ -149,33 +234,27 @@
 					to receive.
 				</p>
 			</div>
-				<div class="select select-one">
-					<div class="check-box">
-						<span class="check"></span>
-					</div>
-					<div class="text">
-						<h3>Eight by Canvas8</h3>
-						<span>A daily dose of inspiration</span>
-					</div>
-				</div>
-				<div class="select select-one">
-					<div class="check-box">
-						<span class="check"></span>
-					</div>
-					<div class="text">
-						<h3>Editor’s Newsletter</h3>
-						<span>A fortnightly spotlight on our editor’s must-read</span>
-					</div>
-				</div>
-				<div class="select select-one">
-					<div class="check-box">
-						<span class="check"></span>
-					</div>
-					<div class="text">
-						<h3>Members Only</h3>
-						<span>Invites to exclusive events and special features </span>
-					</div>
-				</div>
+			<div class="select select-one">
+				<input type="radio" id="select-one" name="radiobox">
+				<label for="select-one" type="three">
+					<span class="head-s">Eight by Canvas8</span> <br>
+					<span>A daily dose of inspiration</span>
+				</label>
+			</div>
+			<div class="select select-one">
+				<input type="radio" id="select-two" name="radiobox">
+				<label for="select-two" type="three">
+					<span class="head-s">Editor’s Newsletter</span> <br>
+					<span>A fortnightly spotlight on our editor’s must-read</span>
+				</label>
+			</div>
+			<div class="select select-one">
+				<input type="radio" id="select-three" name="radiobox">
+				<label for="select-three" type="three">
+					<span class="head-s">Members Only</span> <br>
+					<span>Invites to exclusive events and special features </span>
+				</label>
+			</div>
 			<button class="next-step sub" type="submit">submit</button>
 		</div>
 	</form>
@@ -196,5 +275,6 @@
 <!--		<p>Please contact your account manager</p>-->
 <!--	</div>-->
 <!--</div>-->
+<!-- <script type="text/javascript" src="js/app.js"></script> -->
 </body>
 </html>
