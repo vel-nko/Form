@@ -1,0 +1,91 @@
+//@mixin avatar($diam)
+//	height: $diam
+//	width: $diam
+//	position: relative
+//	z-index: 1
+//	overflow: hidden
+//	border-radius: 50%
+//	img
+//		position: absolute
+//		top: 50%
+//		left: 50%
+//		transform: translate(-50%, -50%)
+//
+//@mixin centeringXY
+//	position: absolute
+//	top: 50%
+//	left: 50%
+//	transform: translate(-50%, -50%)
+//
+//@mixin centeringX
+//	position: absolute
+//	left: 50%
+//	transform: translate(-50%, 0)
+//
+//@mixin centeringY
+//	position: absolute
+//	top: 50%
+//	transform: translate(0, -50%)
+//
+//@mixin iconFont($ico, $fz)
+//	content: unquote("\"")+unquote(str-insert($ico, "\\", 1))+unquote("\"")
+//	display: block
+//	font: #{$fz}/#{1} $iconFamily
+//
+//@mixin font($fz, $lh, $ff)
+//	font: #{$fz}/#{$lh} $ff
+//
+//@mixin font-face($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+//	@font-face
+//		font-family: $font-family
+//		font-weight: $weight
+//		font-style: $style
+//
+//		@if $asset-pipeline == true
+//			src: font-url('#{$file-path}.eot?v=2')
+//			src: font-url('#{$file-path}.eot?v=2#iefix') format('embedded-opentype')
+//			font-url('#{$file-path}.woff2?v=2') format('woff2')
+//			font-url('#{$file-path}.woff?v=2') format('woff')
+//			font-url('#{$file-path}.ttf?v=2') format('truetype')
+//			font-url('#{$file-path}.svg?v=2##{$font-family}') format('svg')
+//		@else
+//			src: url('#{$file-path}.eot?v=2')
+//			src: url('#{$file-path}.eot?v=2#iefix') format('embedded-opentype')
+//			url:('#{$file-path}.woff2?v=2') format('woff2')
+//			url:('#{$file-path}.woff?v=2') format('woff')
+//			url:('#{$file-path}.ttf?v=2') format('truetype')
+//			url:('#{$file-path}.svg?v=2##{$font-family}') format('svg')
+//
+//@mixin icomoon($font-family, $file-path, $weight: normal, $style: normal, $asset-pipeline: false )
+//	@font-face
+//		font-family: $font-family
+//		font-weight: $weight
+//		font-style: $style
+//
+//		src: url('#{$file-path}.eot?v=2')
+//		src: url('#{$file-path}.eot?v=2#iefix') format('embedded-opentype')
+//		url:('#{$file-path}.woff?v=2') format('woff')
+//		url:('#{$file-path}.ttf?v=2') format('truetype')
+//		url:('#{$file-path}.svg?v=2##{$font-family}') format('svg')
+//
+//@mixin spriteWidth($sprite)
+//	width: nth($sprite, 5)
+//
+//@mixin spriteHeight($sprite)
+//	height: nth($sprite, 6)
+//
+//@mixin spritePosition($sprite)
+//	background-position: join(nth($sprite, 3), nth($sprite, 4))
+//
+//@mixin spriteImage($sprite)
+//	background-image: url('../img/#{nth($sprite, 9)}')
+//
+//@mixin sprite($sprite)
+//	@include spriteImage($sprite)
+//	@include spritePosition($sprite)
+//	@include spriteWidth($sprite)
+//	@include spriteHeight($sprite)
+
+@mixin bp($point, $type: min)
+	@media screen and (#{$type}-width: #{$point}px)
+		@content
