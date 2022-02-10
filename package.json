@@ -35,7 +35,7 @@
     "jquery-viewport-checker": "^1.8.8",
     "lazyloadxt": "^1.1.0",
     "mini-css-extract-plugin": "^0.6.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "normalize-scss": "^7.0.1",
     "normalize.css": "^7.0.0",
     "npm": "^6.9.0",
